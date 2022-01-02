@@ -8,9 +8,9 @@
     "react-component"
   ],
   "bugs": {
-    "url": "https://gitlab.skio.cn/web-core/react-web"
+    "url": "https://github.com/lvxiaowu/react-web"
   },
-  "repository": "git://gitlab.skio.cn/web-core/react-web",
+  "repository": "https://github.com/lvxiaowu/react-web",
   "license": "ISC",
   "sideEffects": [
     "dist/*",
