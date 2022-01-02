@@ -1,0 +1,143 @@
+@import 'mixins';
+
+.sd-progress {
+  display: inline-block;
+  position: relative;
+
+  &__outer {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    display: inline-block;
+    margin-left: r(5);
+    font-size: r(14);
+  }
+
+  &--line {
+    .progress-theme('background-color');
+  }
+  &--lg {
+    width: var(--progress-width-lg);
+  }
+
+  &--md {
+    width: var(--progress-width-md);
+  }
+
+  &--sm {
+    width: var(--progress-width-sm);
+  }
+  &__track {
+    width: 100%;
+    height: 100%;
+    background: var(--progress-background);
+    overflow: hidden;
+  }
+
+  &__thumb {
+    height: 100%;
+    width: 0;
+    transition: width 0.6s ease, background-color 0.6s ease;
+  }
+
+  &--circle {
+    display: inline-block;
+    .progress-type();
+    .progress-theme('stroke');
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__text {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+      line-height: 1;
+      transform: translateY(-50%);
+    }
+
+    &--lg {
+      width: var(--progress-size-lg);
+      height: var(--progress-size-lg);
+
+      &__text {
+        font-size: var(--progress-font-size-circle-lg);
+      }
+    }
+
+    &--md {
+      width: var(--progress-size-md);
+      height: var(--progress-size-md);
+
+      &__text {
+        font-size: var(--progress-font-size-circle-md);
+      }
+    }
+
+    &--sm {
+      width: var(--progress-size-sm);
+      height: var(--progress-size-sm);
+
+      &__text {
+        font-size: var(--progress-font-size-circle-sm);
+      }
+    }
+  }
+
+  &--semi-circle {
+    display: inline-block;
+    .progress-type();
+    .progress-theme('stroke');
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__text {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+      line-height: 1;
+    }
+
+    &--lg {
+      width: var(--progress-size-lg);
+      height: calc(var(--progress-size-lg) / 2);
+
+      &__text {
+        font-size: var(--progress-font-size-circle-lg);
+      }
+    }
+
+    &--md {
+      width: var(--progress-size-md);
+      height: calc(var(--progress-size-md) / 2);
+
+      &__text {
+        font-size: var(--progress-font-size-circle-md);
+      }
+    }
+
+    &--sm {
+      width: var(--progress-size-sm);
+      height: calc(var(--progress-size-sm) / 2);
+
+      &__text {
+        font-size: var(--progress-font-size-circle-sm);
+      }
+    }
+  }
+}

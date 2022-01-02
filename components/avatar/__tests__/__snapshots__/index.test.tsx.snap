@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar renders Avatars correctly when set src, icon and string 1`] = `
+<div>
+  <span
+    class="sd-avatar sd-avatar--circle sd-avatar--sm"
+  >
+    <img
+      alt="my avatar"
+      class="sd-avatar--image"
+      src="https://static-venus.shandiantech.com/skio/20211227/1640572420325_state.png"
+    />
+  </span>
+</div>
+`;
+
+exports[`Avatar renders Avatars of different shape correctly 1`] = `
+<div>
+  <Avatar
+    prefixCls="sd-avatar"
+    shape="circle"
+    size="md"
+  />
+  <Avatar
+    prefixCls="sd-avatar"
+    shape="circle"
+    size="md"
+  />
+  <Avatar
+    prefixCls="sd-avatar"
+    shape="square"
+    size="md"
+  />
+</div>
+`;
+
+exports[`Avatar renders Avatars of different size correctly 1`] = `
+<div>
+  <span
+    class="sd-avatar sd-avatar--circle sd-avatar--xl"
+  >
+    <span
+      class="sd-avatar--string"
+      style="transform:scale(1) translateX(-50%);-webkit-transform:scale(1) translateX(-50%);-ms-transform:scale(1) translateX(-50%)"
+    >
+      XL
+    </span>
+  </span>
+  <span
+    class="sd-avatar sd-avatar--circle sd-avatar--lg"
+  >
+    <span
+      class="sd-avatar--string"
+      style="transform:scale(1) translateX(-50%);-webkit-transform:scale(1) translateX(-50%);-ms-transform:scale(1) translateX(-50%)"
+    >
+      LG
+    </span>
+  </span>
+  <span
+    class="sd-avatar sd-avatar--circle sd-avatar--md"
+  >
+    <span
+      class="sd-avatar--string"
+      style="transform:scale(1) translateX(-50%);-webkit-transform:scale(1) translateX(-50%);-ms-transform:scale(1) translateX(-50%)"
+    >
+      MD
+    </span>
+  </span>
+  <span
+    class="sd-avatar sd-avatar--circle sd-avatar--sm"
+  >
+    <span
+      class="sd-avatar--string"
+      style="transform:scale(1) translateX(-50%);-webkit-transform:scale(1) translateX(-50%);-ms-transform:scale(1) translateX(-50%)"
+    >
+      SM
+    </span>
+  </span>
+  <span
+    class="sd-avatar sd-avatar--circle sd-avatar--xs"
+  >
+    <span
+      class="sd-avatar--string"
+      style="transform:scale(1) translateX(-50%);-webkit-transform:scale(1) translateX(-50%);-ms-transform:scale(1) translateX(-50%)"
+    >
+      XS
+    </span>
+  </span>
+</div>
+`;
+
+exports[`Avatar renders Avatars of different type correctly 1`] = `
+<div>
+  <span
+    class="sd-avatar sd-avatar--circle sd-avatar--sm"
+    style="font-size:12px"
+  >
+    <span
+      class="sd-avatar--string"
+    >
+      USER
+    </span>
+  </span>
+  <span
+    class="sd-avatar sd-avatar--circle sd-avatar--sm"
+    style="color:red;background-color:rgb(249, 232, 8)"
+  >
+    <span
+      class="sd-avatar--string"
+      style="transform:scale(1) translateX(-50%);-webkit-transform:scale(1) translateX(-50%);-ms-transform:scale(1) translateX(-50%)"
+    >
+      USER
+    </span>
+  </span>
+  <span
+    class="sd-avatar sd-avatar--circle sd-avatar--sm"
+  >
+    <img
+      alt="my avatar"
+      class="sd-avatar--image"
+      src="https://static-venus.shandiantech.com/skio/20211227/1640572420325_state.png"
+    />
+  </span>
+</div>
+`;
