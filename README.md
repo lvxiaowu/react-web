@@ -11,7 +11,7 @@
 🚆 本地预览
 
 ```bash
-git clone git@gitlab.skio.cn:web-core/react-web.git
+git clone https://github.com/lvxiaowu/react-web.git
 cd react-web
 yarn
 yarn start
