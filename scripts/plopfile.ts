@@ -28,8 +28,8 @@ export default function(plop: NodePlopAPI) {
       },
       {
         type: 'add',
-        path: path.resolve(__dirname, '../components/{{kebabCase name}}/propsType.ts'),
-        templateFile: path.resolve(__dirname, '../templates/component/propsType.hbs'),
+        path: path.resolve(__dirname, '../components/{{kebabCase name}}/PropsType.ts'),
+        templateFile: path.resolve(__dirname, '../templates/component/PropsType.hbs'),
       },
       {
         type: 'add',
@@ -38,18 +38,18 @@ export default function(plop: NodePlopAPI) {
       },
       {
         type: 'add',
-        path: path.resolve(__dirname, '../components/{{kebabCase name}}/demo/basic.tsx'),
-        templateFile: path.resolve(__dirname, '../templates/component/demo/basic.hbs'),
-      },
-      {
-        type: 'add',
-        path: path.resolve(__dirname, '../components/{{kebabCase name}}/demo/index.less'),
+        path: path.resolve(__dirname, '../components/{{kebabCase name}}/demo/index.tsx'),
         templateFile: path.resolve(__dirname, '../templates/component/demo/index.hbs'),
       },
       {
         type: 'add',
-        path: path.resolve(__dirname, '../components/{{kebabCase name}}/__tests__/index.test.tsx'),
-        templateFile: path.resolve(__dirname, '../templates/component/__tests__/index.test.hbs'),
+        path: path.resolve(__dirname, '../components/{{kebabCase name}}/demo/style.less'),
+        templateFile: path.resolve(__dirname, '../templates/component/demo/style.hbs'),
+      },
+      {
+        type: 'add',
+        path: path.resolve(__dirname, '../components/{{kebabCase name}}/__test__/index.test.tsx'),
+        templateFile: path.resolve(__dirname, '../templates/component/__test__/index.test.hbs'),
       },
       {
         type: 'append',

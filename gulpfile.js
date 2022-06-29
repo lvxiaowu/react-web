@@ -27,8 +27,8 @@ const paths = {
  */
 function cssInjection(content) {
   return content
-    .replace(/\/style\/?'/g, "/style/css'")
-    .replace(/\/style\/?"/g, '/style/css"')
+    .replace(/\/style\/?'/g, "/styles/css'")
+    .replace(/\/style\/?"/g, '/styles/css"')
     .replace(/\.less/g, '.css');
 }
 
