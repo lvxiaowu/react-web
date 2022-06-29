@@ -9,7 +9,7 @@ export function mountComponent(RootComponent, callback) {
     const ref = useRef(null);
 
     useEffect(() => {
-      const { open, toggle, clear } = ref.current;
+      const { open, toggle, clear } = ref.current!;
       callback({
         open,
         toggle,

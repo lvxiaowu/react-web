@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 
 export function parseChildList<T>(children: React.ReactNode): T[] {
@@ -13,5 +14,5 @@ export function parseChildList<T>(children: React.ReactNode): T[] {
       }
       return null;
     })
-    .filter((child) => child);
+    .filter(child => child);
 }
