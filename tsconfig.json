@@ -6,7 +6,7 @@
     "jsx": "react",
     "declaration": true,
     "declarationDir": "lib",
-    "strict": true,
+    "strict": false,
     "skipLibCheck": true,
     "strictNullChecks": true,
     "strictPropertyInitialization": false,

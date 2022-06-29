@@ -46,7 +46,7 @@ export const isNumeric = (n: any): boolean => {
 
 // 设置元素行内样式
 export const setStyle = (ele: HTMLElement, styles: { [prop: string]: string | number }) => {
-  Object.keys(styles).forEach((prop) => {
+  Object.keys(styles).forEach(prop => {
     let unit = '';
     if (
       ['width', 'height', 'top', 'right', 'bottom', 'left'].indexOf(prop) !== -1 &&
@@ -66,7 +66,7 @@ export const getStyleComputedProperty = (ele: Element, property: Property): stri
 };
 
 // 判断元素是否固定定位或者是否在固定定位元素内
-export const isFixed = (ele): boolean => {
+export const isFixed = (ele: HTMLElement): boolean => {
   if (ele === window.document.body) {
     return false;
   }
@@ -74,13 +74,13 @@ export const isFixed = (ele): boolean => {
     return true;
   }
   if (ele.parentNode) {
-    return isFixed(ele.parentNode);
+    return isFixed(ele.parentNode as HTMLElement);
   }
   return false;
 };
 
 // 获取元素完整尺寸(offset size + margin)
-export const getOuterSizes = (ele) => {
+export const getOuterSizes = ele => {
   const _display = ele.style.display;
   const _visibility = ele.style.visibility;
   ele.style.display = 'block';
@@ -102,7 +102,7 @@ export const getOuterSizes = (ele) => {
 };
 
 // 获取元素的offsetParent
-export const getOffsetParent = (ele) => {
+export const getOffsetParent = ele => {
   const { offsetParent } = ele;
   return offsetParent === window.document.body || !offsetParent
     ? window.document.documentElement
@@ -134,7 +134,7 @@ export const getScrollParent = (ele): HTMLElement => {
 };
 
 // 获取浏览器支持的带前缀属性名
-export const getSupportedPropertyName = (property) => {
+export const getSupportedPropertyName = property => {
   const prefixes = ['', 'ms', 'webkit', 'moz', 'o'];
 
   for (let i = 0; i < prefixes.length; i++) {
