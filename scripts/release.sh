@@ -42,14 +42,14 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 
   if [[ $VERSION =~ "alpha" ]]
   then
-    npm publish --tag alpha
+    npm publish  --tag alpha
   elif [[ $VERSION =~ "beta" ]]
   then
-    npm publish --tag beta
+    npm publish  --tag beta
   elif [[ $VERSION =~ "rc" ]]
   then
-    npm publish --tag rc
+    npm publish  --tag rc
   else
-    npm publish
+    npm publish 
   fi
 fi
