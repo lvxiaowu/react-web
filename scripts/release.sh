@@ -17,8 +17,9 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
   echo "Releasing $VERSION ..."
 
   if [[ -z $SKIP_TESTS ]]; then
-    #npm run lint
-    npm run test
+    # npm run lint
+    # npm run test
+    echo 'hello world'
   fi
 
   # build
