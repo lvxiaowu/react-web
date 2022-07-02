@@ -1,6 +1,6 @@
 {
   "name": "@sd/react-web",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "description": "基于 React 的桌面端UI库",
   "keywords": [
     "react",
